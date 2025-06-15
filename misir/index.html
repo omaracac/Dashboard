@@ -1,170 +1,193 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar"dir="ar" >
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>لوحة تحكم المدير</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>admin dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <style>
-      /* بعض التعديلات البسيطة للعرض */
-      body {
-        font-family: 'Cairo', sans-serif;
-      }
-      .wrapper {
-        padding: 20px;
-      }
-      .number_login div {
-        display: inline-block;
-        width: 100px;
-        text-align: center;
-        margin: 10px;
-        font-size: 18px;
-      }
-      .card {
-        margin-bottom: 10px;
-      }
-      .img {
-        background: #eee;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        text-align: center;
-      }
-    </style>
   </head>
-  <body>
+  <div>
     <section>
       <!-- price and info  -->
-      <div class="wrapper">
-        <h2>مرحباً بك في لوحة التحكم</h2>
-        <div class="number_login">
-          <div class="one"><i class="fas fa-calendar-day"></i><br>اليوم</div>
-          <div class="two"><i class="fas fa-comments"></i><br>التعليقات</div>
-          <div class="three"><i class="fas fa-users"></i><br>المستخدمون</div>
-        </div>
-        <div class="form-floating">
-          <label for="floatingTextarea"><b>تعليق</b></label>
-          <textarea
-            class="form-control"
-            placeholder="اترك تعليق هنا"
-            id="floatingTextarea2"
-            style="height: 100px"
-          >morhaf write here any thing please</textarea>
-        </div>
+      <div class="wrapper">        
+          <h2> welcome to dashboard </h2>
+          <div class="number_login">
+            <div class="one"><i class="fas fa-calendar-day"></i><br>day</div>
+            <div class="two"><i class="fas fa-comments"></i><br>comments</div>
+            <div class="three"><i class="fas fa-users"></i><br>users</div>
+          </div>
+          <div class="form-floating">
+            <label for="floatingTextarea"><b>coment</b></label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px">morhaf write here  any thing  plase </textarea>
+            
+          </div>
       </div>
     </section>
+    
 
-    <div class="cards_home container mt-4">
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                استشارة 1
-              </button>
-            </h5>
-          </div>
 
-          <div
-            id="collapseOne"
-            class="collapse show"
-            aria-labelledby="headingOne"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <input placeholder="اضف الصورة" type="file" class="form-control mb-2" />
-              <input placeholder="اسم الاستشارة" type="text" class="form-control mb-2" />
-              <div class="img mb-2">...add img</div>
-              <textarea
-                class="form-control mb-2"
-                placeholder="أدخل النص هنا"
-                style="height: 100px"
-              ></textarea>
-              <input
-                placeholder="العدد المتبقي"
-                type="number"
-                class="form-control mb-2"
-              />
-              <input placeholder="السعر الجديد" type="number" class="form-control mb-2" />
-              <input
-                placeholder="السعر القديم"
-                type="number"
-                class="form-control mb-2 deleted-input"
-              />
-            </div>
-          </div>
-        </div>
+<div class="cards_home">
 
-        <!-- استنسخ بطاقة أخرى وبدّل المعرفات فقط من collapseOne إلى collapseTwo وهكذا -->
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                استشارة 2
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseTwo"
-            class="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <input placeholder="اضف الصورة" type="file" class="form-control mb-2" />
-              <input placeholder="اسم الاستشارة" type="text" class="form-control mb-2" />
-              <div class="img mb-2">...add img</div>
-              <textarea
-                class="form-control mb-2"
-                placeholder="أدخل النص هنا"
-                style="height: 100px"
-              ></textarea>
-              <input
-                placeholder="العدد المتبقي"
-                type="number"
-                class="form-control mb-2"
-              />
-              <input placeholder="السعر الجديد" type="number" class="form-control mb-2" />
-              <input
-                placeholder="السعر القديم"
-                type="number"
-                class="form-control mb-2 deleted-input"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- يمكنك إضافة المزيد من البطاقات بنفس الطريقة -->
-      </div>
+  <div class="card" >
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapset1">
+         استشارة 1 
+      </a>
     </div>
+    <div id="collapset1" class="collapse " data-parent="#accordion" > 
+        <!-- <label for="">تحميل الصورة</label> -->
+        <input placeholder="اضف الصورة" type="file">
+        <!-- <label for="">الاسم</label> -->
+        <input placeholder="اسم الاستشارة" type="text">
+        <!-- <label for="">اضافة صورة</label> -->
+        <div class="img"  > ...add img</div>
+        <!-- <label for="">اضافة النص</label> -->
+        <textarea p class="form-control2" placeholder="أدخل النص هنا" id="floatingTextarea2" style="height: 100px"></textarea>
+        <!-- <label for="">االسعر القديم</label> -->
+        <input placeholder="العدد المتبقي" type="number"  >
+        <!-- <label for="">السعر الجديد</label> -->
+        <input placeholder="السعر الجديد"  type="number">
+        <!-- <label for="">عدد الاستشارات المتبقي</label> -->
+        <input placeholder="السعر القديم" type="number" class="deleted-input">
+    </div>
+  </div> 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu8S0VKaIzap3H+4H4rPbmCh5/tfQctqJzJW6vrpxG6AwPli"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+LyR+1+1LwZlyTcNh+sRX1p6F/pgiJhLgE61r9cJJ0IEJp5wJ2cx5S84"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/omar.js"></script>
-  </body>
+  <div class="card" >
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapset2">
+         استشارة 2 
+      </a>
+    </div>
+    <div id="collapset2" class="collapse " data-parent="#accordion" > 
+        <!-- <label for="">تحميل الصورة</label> -->
+        <input placeholder="اضف الصورة" type="file">
+        <!-- <label for="">الاسم</label> -->
+        <input placeholder="اسم الاستشارة" type="text">
+        <!-- <label for="">اضافة صورة</label> -->
+        <div class="img"  > ...add img</div>
+        <!-- <label for="">اضافة النص</label> -->
+        <textarea p class="form-control2" placeholder="أدخل النص هنا" id="floatingTextarea2" style="height: 100px"></textarea>
+        <!-- <label for="">االسعر القديم</label> -->
+        <input placeholder="العدد المتبقي" type="number"  >
+        <!-- <label for="">السعر الجديد</label> -->
+        <input placeholder="السعر الجديد"  type="number">
+        <!-- <label for="">عدد الاستشارات المتبقي</label> -->
+        <input placeholder="السعر القديم" type="number" class="deleted-input">
+    </div>
+  </div> 
+
+  <div class="card" >
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapset3">
+         استشارة 3 
+      </a>
+    </div>
+    <div id="collapset3" class="collapse " data-parent="#accordion" > 
+        <!-- <label for="">تحميل الصورة</label> -->
+        <input placeholder="اضف الصورة" type="file">
+        <!-- <label for="">الاسم</label> -->
+        <input placeholder="اسم الاستشارة" type="text">
+        <!-- <label for="">اضافة صورة</label> -->
+        <div class="img"  > ...add img</div>
+        <!-- <label for="">اضافة النص</label> -->
+        <textarea p class="form-control2" placeholder="أدخل النص هنا" id="floatingTextarea2" style="height: 100px"></textarea>
+        <!-- <label for="">االسعر القديم</label> -->
+        <input placeholder="العدد المتبقي" type="number"  >
+        <!-- <label for="">السعر الجديد</label> -->
+        <input placeholder="السعر الجديد"  type="number">
+        <!-- <label for="">عدد الاستشارات المتبقي</label> -->
+        <input placeholder="السعر القديم" type="number" class="deleted-input">
+    </div>
+  </div> 
+
+  <div class="card" >
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapset4">
+         استشارة 4 
+      </a>
+    </div>
+    <div id="collapset4" class="collapse " data-parent="#accordion" > 
+        <!-- <label for="">تحميل الصورة</label> -->
+        <input placeholder="اضف الصورة" type="file">
+        <!-- <label for="">الاسم</label> -->
+        <input placeholder="اسم الاستشارة" type="text">
+        <!-- <label for="">اضافة صورة</label> -->
+        <div class="img"  > ...add img</div>
+        <!-- <label for="">اضافة النص</label> -->
+        <textarea p class="form-control2" placeholder="أدخل النص هنا" id="floatingTextarea2" style="height: 100px"></textarea>
+        <!-- <label for="">االسعر القديم</label> -->
+        <input placeholder="العدد المتبقي" type="number"  >
+        <!-- <label for="">السعر الجديد</label> -->
+        <input placeholder="السعر الجديد"  type="number">
+        <!-- <label for="">عدد الاستشارات المتبقي</label> -->
+        <input placeholder="السعر القديم" type="number" class="deleted-input">
+    </div>
+  </div> 
+
+  <div class="card" >
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapset5">
+         استشارة  5
+      </a>
+    </div>
+    <div id="collapset5" class="collapse " data-parent="#accordion" > 
+        <!-- <label for="">تحميل الصورة</label> -->
+        <input placeholder="اضف الصورة" type="file">
+        <!-- <label for="">الاسم</label> -->
+        <input placeholder="اسم الاستشارة" type="text">
+        <!-- <label for="">اضافة صورة</label> -->
+        <div class="img"  > ...add img</div>
+        <!-- <label for="">اضافة النص</label> -->
+        <textarea p class="form-control2" placeholder="أدخل النص هنا" id="floatingTextarea2" style="height: 100px"></textarea>
+        <!-- <label for="">االسعر القديم</label> -->
+        <input placeholder="العدد المتبقي" type="number"  >
+        <!-- <label for="">السعر الجديد</label> -->
+        <input placeholder="السعر الجديد"  type="number">
+        <!-- <label for="">عدد الاستشارات المتبقي</label> -->
+        <input placeholder="السعر القديم" type="number" class="deleted-input">
+    </div>
+  </div> 
+
+  <div class="card" >
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapset6">
+         استشارة 6 
+      </a>
+    </div>
+    <div id="collapset6" class="collapse " data-parent="#accordion" > 
+        <!-- <label for="">تحميل الصورة</label> -->
+        <input placeholder="اضف الصورة" type="file">
+        <!-- <label for="">الاسم</label> -->
+        <input placeholder="اسم الاستشارة" type="text">
+        <!-- <label for="">اضافة صورة</label> -->
+        <div class="img"  > ...add img</div>
+        <!-- <label for="">اضافة النص</label> -->
+        <textarea p class="form-control2" placeholder="أدخل النص هنا" id="floatingTextarea2" style="height: 100px"></textarea>
+        <!-- <label for="">االسعر القديم</label> -->
+        <input placeholder="العدد المتبقي" type="number"  >
+        <!-- <label for="">السعر الجديد</label> -->
+        <input placeholder="السعر الجديد"  type="number">
+        <!-- <label for="">عدد الاستشارات المتبقي</label> -->
+        <input placeholder="السعر القديم" type="number" class="deleted-input">
+    </div>
+  </div> 
+
+  
+
+
+
+</div>
+
+     
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/omar.js"></script>
+</body>
 </html>
